@@ -2,7 +2,7 @@
 
 A voice-enabled web app that lets you ask questions about a wine catalog and get answers in both text and spoken voice. Built with FastAPI, LangChain, and the Web Speech API.
 
-![Voice Wine Explorer screenshot](https://placehold.co/900x480/130f12/d4af6d?text=Voice+Wine+Explorer)
+![Voice Wine Explorer screenshot](pics/image.png)
 
 ---
 
