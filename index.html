@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Wine Explorer</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Voice Wine Explorer</h1>
+      <p>Ask by voice or text. Get grounded recommendations from real wine data.</p>
+    </section>
+
+    <section class="control-panel">
+      <div class="mic-wrap">
+        <button id="micBtn" class="mic-btn" aria-label="Toggle microphone">🎙️</button>
+      </div>
+      <div id="status" class="status">Ready to listen or type.</div>
+
+      <div class="input-row">
+        <input id="questionInput" type="text" placeholder="Try: recommend a red under $40 from California" />
+        <button id="askBtn" class="ask-btn">Ask</button>
+      </div>
+    </section>
+
+    <div id="loading" class="loading">Pouring your recommendation...</div>
+
+    <section class="result-panel">
+      <div class="bubble">
+        <h3>Question</h3>
+        <p id="questionText">No question yet.</p>
+      </div>
+      <div class="bubble">
+        <h3>Answer</h3>
+        <p id="answerText">I will respond here and read it out loud.</p>
+      </div>
+    </section>
+
+    <section id="winesGrid" class="wines-grid"></section>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
